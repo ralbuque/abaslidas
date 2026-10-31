@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<style>
+  body { font-family: system-ui, sans-serif; width: 240px; margin: 0; padding: 14px; background: #fff; color: #222; }
+  h1 { font-size: 15px; margin: 0 0 10px; }
+  #status { font-size: 13px; margin-bottom: 12px; color: #555; }
+  button { width: 100%; padding: 10px; margin-bottom: 8px; border: 0; border-radius: 8px; font-size: 14px; cursor: pointer; }
+  #iniciar { background: #e01b24; color: #fff; font-weight: 600; }
+  #limpar { background: #eee; color: #333; }
+  small { color: #888; font-size: 11px; }
+</style>
+</head>
+<body>
+  <h1>🎬 Modo Gravação</h1>
+  <div id="status"></div>
+  <button id="iniciar">Estou pronto para gravar</button>
+  <button id="limpar">Limpar marcas</button>
+  <small>Atalhos: Alt+Shift+G (iniciar) · Alt+Shift+L (limpar)</small>
+  <script src="popup.js"></script>
+</body>
+</html>

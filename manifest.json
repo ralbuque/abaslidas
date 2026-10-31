@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Abas Lidas – Modo Gravação",
+  "version": "1.0",
+  "description": "Marca todas as abas como não lidas (bolinha vermelha numerada) e desmarca cada uma quando você clica nela.",
+  "permissions": ["tabs", "scripting", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Abas Lidas – Modo Gravação"
+  },
+  "commands": {
+    "iniciar": {
+      "suggested_key": { "default": "Alt+Shift+G" },
+      "description": "Estou pronto para gravar (marcar todas as abas)"
+    },
+    "limpar": {
+      "suggested_key": { "default": "Alt+Shift+L" },
+      "description": "Remover todas as marcas"
+    }
+  }
+}
